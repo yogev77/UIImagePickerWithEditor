@@ -22,9 +22,17 @@
 
 -(IBAction)chooseImage:(id)sender
 {
-    self.imagePicker = [[[YSImagePickerEditor alloc] init] autorelease];
-    self.imagePicker.delegate = self;
-    [self.imagePicker presentImagePickerPopoverOverButton:sender withSize:CGSizeMake(320, 220)];
+    if([self.imagePicker isPopoverVisible])
+    {
+        [self.imagePicker dismissPopoverAnimated:YES];
+        self.imagePicker =nil;
+    }
+    else
+    {
+        self.imagePicker = [[[YSImagePickerEditor alloc] init] autorelease];
+        self.imagePicker.delegate = self;
+        [self.imagePicker presentImagePickerPopoverOverButton:sender withSize:CGSizeMake(320, 220)];
+    }
 }
 
 //-------------------------------------------------------------------------------------

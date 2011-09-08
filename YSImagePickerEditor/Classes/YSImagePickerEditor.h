@@ -46,4 +46,6 @@
 //that you set your aspect ratio by using a fixed width of 320 Resolution and only change heights.
 -(void)presentImagePickerPopoverOverButton:(UIBarButtonItem*)button withSize:(CGSize)size;
 -(void)dismissPopoverAnimated:(BOOL)animated;
+-(BOOL)isPopoverVisible;
+
 @end

@@ -60,6 +60,11 @@
     self.popoverController = nil;
 }
 
+-(BOOL)isPopoverVisible
+{
+    return [self.popoverController isPopoverVisible];
+}
+
 //------------------------------------------------------------------------------
 #pragma mark - Private Methods
 //------------------------------------------------------------------------------
