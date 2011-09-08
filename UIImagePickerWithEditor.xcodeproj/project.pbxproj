@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DFAF4CC14179D950032EE2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFAF4CB14179D950032EE2B /* UIKit.framework */; };
+		5DFAF4CE14179D950032EE2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFAF4CD14179D950032EE2B /* Foundation.framework */; };
+		5DFAF4D014179D950032EE2B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFAF4CF14179D950032EE2B /* CoreGraphics.framework */; };
+		5DFAF4D614179D950032EE2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DFAF4D414179D950032EE2B /* InfoPlist.strings */; };
+		5DFAF4D914179D950032EE2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFAF4D814179D950032EE2B /* main.m */; };
+		5DFAF4DC14179D950032EE2B /* UIImagePickerWithEditorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFAF4DB14179D950032EE2B /* UIImagePickerWithEditorAppDelegate.m */; };
+		5DFAF4DF14179D950032EE2B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DFAF4DD14179D950032EE2B /* MainWindow.xib */; };
+		5DFAF4E214179D950032EE2B /* UIImagePickerWithEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFAF4E114179D950032EE2B /* UIImagePickerWithEditorViewController.m */; };
+		5DFAF4E514179D950032EE2B /* UIImagePickerWithEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DFAF4E314179D950032EE2B /* UIImagePickerWithEditorViewController.xib */; };
+		5DFAF4F01417A3090032EE2B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFAF4EF1417A3090032EE2B /* MobileCoreServices.framework */; };
+		5DFAF5281418B5F20032EE2B /* YSImageCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFAF5221418B5E70032EE2B /* YSImageCrop.m */; };
+		5DFAF5291418B5F20032EE2B /* YSImagePickerEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFAF5241418B5EB0032EE2B /* YSImagePickerEditor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5DFAF4C714179D950032EE2B /* UIImagePickerWithEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIImagePickerWithEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DFAF4CB14179D950032EE2B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5DFAF4CD14179D950032EE2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5DFAF4CF14179D950032EE2B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5DFAF4D314179D950032EE2B /* UIImagePickerWithEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIImagePickerWithEditor-Info.plist"; sourceTree = "<group>"; };
+		5DFAF4D514179D950032EE2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5DFAF4D714179D950032EE2B /* UIImagePickerWithEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerWithEditor-Prefix.pch"; sourceTree = "<group>"; };
+		5DFAF4D814179D950032EE2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5DFAF4DA14179D950032EE2B /* UIImagePickerWithEditorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImagePickerWithEditorAppDelegate.h; sourceTree = "<group>"; };
+		5DFAF4DB14179D950032EE2B /* UIImagePickerWithEditorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImagePickerWithEditorAppDelegate.m; sourceTree = "<group>"; };
+		5DFAF4DE14179D950032EE2B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		5DFAF4E014179D950032EE2B /* UIImagePickerWithEditorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImagePickerWithEditorViewController.h; sourceTree = "<group>"; };
+		5DFAF4E114179D950032EE2B /* UIImagePickerWithEditorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImagePickerWithEditorViewController.m; sourceTree = "<group>"; };
+		5DFAF4E414179D950032EE2B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UIImagePickerWithEditorViewController.xib; sourceTree = "<group>"; };
+		5DFAF4EF1417A3090032EE2B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5DFAF5221418B5E70032EE2B /* YSImageCrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YSImageCrop.m; path = YSImagePickerEditor/Classes/YSImageCrop.m; sourceTree = SOURCE_ROOT; };
+		5DFAF5231418B5E80032EE2B /* YSImageCrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSImageCrop.h; path = YSImagePickerEditor/Classes/YSImageCrop.h; sourceTree = SOURCE_ROOT; };
+		5DFAF5241418B5EB0032EE2B /* YSImagePickerEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YSImagePickerEditor.m; path = YSImagePickerEditor/Classes/YSImagePickerEditor.m; sourceTree = SOURCE_ROOT; };
+		5DFAF5251418B5ED0032EE2B /* YSImageCropDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSImageCropDelegate.h; path = YSImagePickerEditor/Classes/YSImageCropDelegate.h; sourceTree = SOURCE_ROOT; };
+		5DFAF5261418B5EE0032EE2B /* YSImagePickerEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSImagePickerEditor.h; path = YSImagePickerEditor/Classes/YSImagePickerEditor.h; sourceTree = SOURCE_ROOT; };
+		5DFAF5271418B5F00032EE2B /* YSImagePickerEditorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSImagePickerEditorDelegate.h; path = YSImagePickerEditor/Classes/YSImagePickerEditorDelegate.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DFAF4C414179D950032EE2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DFAF4F01417A3090032EE2B /* MobileCoreServices.framework in Frameworks */,
+				5DFAF4CC14179D950032EE2B /* UIKit.framework in Frameworks */,
+				5DFAF4CE14179D950032EE2B /* Foundation.framework in Frameworks */,
+				5DFAF4D014179D950032EE2B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DFAF4BC14179D950032EE2B = {
+			isa = PBXGroup;
+			children = (
+				5DFAF4D114179D950032EE2B /* UIImagePickerWithEditor */,
+				5DFAF4CA14179D950032EE2B /* Frameworks */,
+				5DFAF4C814179D950032EE2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DFAF4C814179D950032EE2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DFAF4C714179D950032EE2B /* UIImagePickerWithEditor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DFAF4CA14179D950032EE2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DFAF4EF1417A3090032EE2B /* MobileCoreServices.framework */,
+				5DFAF4CB14179D950032EE2B /* UIKit.framework */,
+				5DFAF4CD14179D950032EE2B /* Foundation.framework */,
+				5DFAF4CF14179D950032EE2B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DFAF4D114179D950032EE2B /* UIImagePickerWithEditor */ = {
+			isa = PBXGroup;
+			children = (
+				5DFAF4F11417ACC70032EE2B /* YSImagePickerEditor */,
+				5DFAF4DA14179D950032EE2B /* UIImagePickerWithEditorAppDelegate.h */,
+				5DFAF4DB14179D950032EE2B /* UIImagePickerWithEditorAppDelegate.m */,
+				5DFAF4DD14179D950032EE2B /* MainWindow.xib */,
+				5DFAF4E014179D950032EE2B /* UIImagePickerWithEditorViewController.h */,
+				5DFAF4E114179D950032EE2B /* UIImagePickerWithEditorViewController.m */,
+				5DFAF4E314179D950032EE2B /* UIImagePickerWithEditorViewController.xib */,
+				5DFAF4D214179D950032EE2B /* Supporting Files */,
+			);
+			path = UIImagePickerWithEditor;
+			sourceTree = "<group>";
+		};
+		5DFAF4D214179D950032EE2B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DFAF4D314179D950032EE2B /* UIImagePickerWithEditor-Info.plist */,
+				5DFAF4D414179D950032EE2B /* InfoPlist.strings */,
+				5DFAF4D714179D950032EE2B /* UIImagePickerWithEditor-Prefix.pch */,
+				5DFAF4D814179D950032EE2B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DFAF4F11417ACC70032EE2B /* YSImagePickerEditor */ = {
+			isa = PBXGroup;
+			children = (
+				5DFAF5221418B5E70032EE2B /* YSImageCrop.m */,
+				5DFAF5231418B5E80032EE2B /* YSImageCrop.h */,
+				5DFAF5241418B5EB0032EE2B /* YSImagePickerEditor.m */,
+				5DFAF5251418B5ED0032EE2B /* YSImageCropDelegate.h */,
+				5DFAF5261418B5EE0032EE2B /* YSImagePickerEditor.h */,
+				5DFAF5271418B5F00032EE2B /* YSImagePickerEditorDelegate.h */,
+			);
+			name = YSImagePickerEditor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DFAF4C614179D950032EE2B /* UIImagePickerWithEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DFAF4E814179D950032EE2B /* Build configuration list for PBXNativeTarget "UIImagePickerWithEditor" */;
+			buildPhases = (
+				5DFAF4C314179D950032EE2B /* Sources */,
+				5DFAF4C414179D950032EE2B /* Frameworks */,
+				5DFAF4C514179D950032EE2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIImagePickerWithEditor;
+			productName = UIImagePickerWithEditor;
+			productReference = 5DFAF4C714179D950032EE2B /* UIImagePickerWithEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DFAF4BE14179D950032EE2B /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5DFAF4C114179D950032EE2B /* Build configuration list for PBXProject "UIImagePickerWithEditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5DFAF4BC14179D950032EE2B;
+			productRefGroup = 5DFAF4C814179D950032EE2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DFAF4C614179D950032EE2B /* UIImagePickerWithEditor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DFAF4C514179D950032EE2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DFAF4D614179D950032EE2B /* InfoPlist.strings in Resources */,
+				5DFAF4DF14179D950032EE2B /* MainWindow.xib in Resources */,
+				5DFAF4E514179D950032EE2B /* UIImagePickerWithEditorViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DFAF4C314179D950032EE2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DFAF4D914179D950032EE2B /* main.m in Sources */,
+				5DFAF4DC14179D950032EE2B /* UIImagePickerWithEditorAppDelegate.m in Sources */,
+				5DFAF4E214179D950032EE2B /* UIImagePickerWithEditorViewController.m in Sources */,
+				5DFAF5281418B5F20032EE2B /* YSImageCrop.m in Sources */,
+				5DFAF5291418B5F20032EE2B /* YSImagePickerEditor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5DFAF4D414179D950032EE2B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DFAF4D514179D950032EE2B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5DFAF4DD14179D950032EE2B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DFAF4DE14179D950032EE2B /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		5DFAF4E314179D950032EE2B /* UIImagePickerWithEditorViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DFAF4E414179D950032EE2B /* en */,
+			);
+			name = UIImagePickerWithEditorViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DFAF4E614179D950032EE2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		5DFAF4E714179D950032EE2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		5DFAF4E914179D950032EE2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIImagePickerWithEditor/UIImagePickerWithEditor-Prefix.pch";
+				INFOPLIST_FILE = "UIImagePickerWithEditor/UIImagePickerWithEditor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5DFAF4EA14179D950032EE2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIImagePickerWithEditor/UIImagePickerWithEditor-Prefix.pch";
+				INFOPLIST_FILE = "UIImagePickerWithEditor/UIImagePickerWithEditor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DFAF4C114179D950032EE2B /* Build configuration list for PBXProject "UIImagePickerWithEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DFAF4E614179D950032EE2B /* Debug */,
+				5DFAF4E714179D950032EE2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DFAF4E814179D950032EE2B /* Build configuration list for PBXNativeTarget "UIImagePickerWithEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DFAF4E914179D950032EE2B /* Debug */,
+				5DFAF4EA14179D950032EE2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DFAF4BE14179D950032EE2B /* Project object */;
+}
