@@ -126,7 +126,6 @@
 
 -(void)YSImageCropDidFinishEditingWithImage:(UIImage*)image
 {
-    [self dismissPopoverAnimated:TRUE];
     [self.delegate YSImagePickerDoneEditWithImage:image];
 }
 

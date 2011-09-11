@@ -47,9 +47,16 @@
 -(void)YSImagePickerDoneEditWithImage:(UIImage *)image
 {
     imageView.image = image;
+    [self.imagePicker dismissPopoverAnimated:YES];
     self.imagePicker =nil;
 }
 
+
+-(void)YSImagePickerDismissed
+{
+    //here you may dealloc your picker
+    self.imagePicker = nil;
+}
 
 //-------------------------------------------------------------------------------------
 #pragma mark - Super Methods
