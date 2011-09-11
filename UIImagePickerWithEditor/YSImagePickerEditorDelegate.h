@@ -13,4 +13,6 @@
 -(void)YSImagePickerDoneEditWithImage:(UIImage*)image;
 -(void)YSImagePickerFailedWithError:(NSError *)error;
 
+//Called when the popover is dimissed by the user when touching outside the popover area
+-(void)YSImagePickerDismissed;
 @end

@@ -1,8 +1,8 @@
 //
-//  YSImageCropDelegate.h
-//  BabyQA
+//  YSImagePickerEditor.h
+//  UIImagePickerWithEditor
 //
-//  Created by yogev shelly on 9/7/11.
+//  Created by yogev shelly on 9/8/11.
 //  Copyright 2011 http://www.27dv.com All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,9 +23,28 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import "YSImageCropDelegate.h"
+#import "YSImagePickerEditorDelegate.h"
 
+@interface YSImagePickerEditor : UIViewController <UIImagePickerControllerDelegate,
+UINavigationControllerDelegate, UIPopoverControllerDelegate, YSImageCropDelegate>
+{
+    UIBarButtonItem * barButton;
+    UIPopoverController *popoverController;
+    id <YSImagePickerEditorDelegate> delegate;
+    CGSize popoverSize;
+}
 
-@protocol YSImageCropDelegate <NSObject>
--(void)YSImageCropDidFinishEditingWithImage:(UIImage*)image;
+@property (nonatomic,assign) id <YSImagePickerEditorDelegate> delegate;
+@property (nonatomic,retain) UIPopoverController *popoverController;
+@property (nonatomic,retain) UIBarButtonItem * barButton;
+
+//The UIImagePicker by default is set to 320x480 (iPhone 3G Resolution), My UX guideline is 
+//that you set your aspect ratio by using a fixed width of 320 Resolution and only change heights.
+-(void)presentImagePickerPopoverOverButton:(UIBarButtonItem*)button withSize:(CGSize)size;
+-(void)dismissPopoverAnimated:(BOOL)animated;
+-(BOOL)isPopoverVisible;
+
 @end

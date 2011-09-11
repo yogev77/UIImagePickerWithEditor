@@ -56,6 +56,7 @@
 
 -(void)dismissPopoverAnimated:(BOOL)animated
 {
+    self.popoverController.delegate = nil;
     [self.popoverController dismissPopoverAnimated:animated];
     self.popoverController = nil;
 }
@@ -98,14 +99,25 @@
     YSImageCrop * imageCrop = [[[YSImageCrop alloc] initWithImage:image andSize:CGSizeMake(popoverSize.width, popoverSize.height)] autorelease];
     imageCrop.delegate =self;
     UINavigationController *navigationController = [[[UINavigationController alloc] initWithRootViewController:imageCrop] autorelease];     
+    self.popoverController.delegate = self;
     
     self.popoverController = [[[UIPopoverController alloc]
                                initWithContentViewController:navigationController] autorelease];
-        
+    
     [self.popoverController 
      presentPopoverFromBarButtonItem:self.barButton
      permittedArrowDirections:UIPopoverArrowDirectionUp
      animated:YES];
+}
+
+//-------------------------------------------------------------------------------------
+#pragma mark - Popover Delegate
+//-------------------------------------------------------------------------------------
+
+-(void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
+{
+    self.popoverController.delegate =nil;
+    [self.delegate YSImagePickerDismissed];
 }
 
 //-------------------------------------------------------------------------------------
@@ -172,19 +184,19 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
 #pragma mark - View lifecycle
 
 /*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView
-{
-}
-*/
+ // Implement loadView to create a view hierarchy programmatically, without using a nib.
+ - (void)loadView
+ {
+ }
+ */
 
 /*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-*/
+ // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+ - (void)viewDidLoad
+ {
+ [super viewDidLoad];
+ }
+ */
 
 - (void)viewDidUnload
 {

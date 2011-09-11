@@ -17,8 +17,8 @@
 		5DFAF4E214179D950032EE2B /* UIImagePickerWithEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFAF4E114179D950032EE2B /* UIImagePickerWithEditorViewController.m */; };
 		5DFAF4E514179D950032EE2B /* UIImagePickerWithEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DFAF4E314179D950032EE2B /* UIImagePickerWithEditorViewController.xib */; };
 		5DFAF4F01417A3090032EE2B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFAF4EF1417A3090032EE2B /* MobileCoreServices.framework */; };
-		5DFAF5281418B5F20032EE2B /* YSImageCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFAF5221418B5E70032EE2B /* YSImageCrop.m */; };
-		5DFAF5291418B5F20032EE2B /* YSImagePickerEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFAF5241418B5EB0032EE2B /* YSImagePickerEditor.m */; };
+		5DFAF5C8141D2B700032EE2B /* YSImageCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFAF5C2141D2B700032EE2B /* YSImageCrop.m */; };
+		5DFAF5C9141D2B700032EE2B /* YSImagePickerEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFAF5C4141D2B700032EE2B /* YSImagePickerEditor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,12 +37,12 @@
 		5DFAF4E114179D950032EE2B /* UIImagePickerWithEditorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImagePickerWithEditorViewController.m; sourceTree = "<group>"; };
 		5DFAF4E414179D950032EE2B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UIImagePickerWithEditorViewController.xib; sourceTree = "<group>"; };
 		5DFAF4EF1417A3090032EE2B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		5DFAF5221418B5E70032EE2B /* YSImageCrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YSImageCrop.m; path = YSImagePickerEditor/Classes/YSImageCrop.m; sourceTree = SOURCE_ROOT; };
-		5DFAF5231418B5E80032EE2B /* YSImageCrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSImageCrop.h; path = YSImagePickerEditor/Classes/YSImageCrop.h; sourceTree = SOURCE_ROOT; };
-		5DFAF5241418B5EB0032EE2B /* YSImagePickerEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YSImagePickerEditor.m; path = YSImagePickerEditor/Classes/YSImagePickerEditor.m; sourceTree = SOURCE_ROOT; };
-		5DFAF5251418B5ED0032EE2B /* YSImageCropDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSImageCropDelegate.h; path = YSImagePickerEditor/Classes/YSImageCropDelegate.h; sourceTree = SOURCE_ROOT; };
-		5DFAF5261418B5EE0032EE2B /* YSImagePickerEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSImagePickerEditor.h; path = YSImagePickerEditor/Classes/YSImagePickerEditor.h; sourceTree = SOURCE_ROOT; };
-		5DFAF5271418B5F00032EE2B /* YSImagePickerEditorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSImagePickerEditorDelegate.h; path = YSImagePickerEditor/Classes/YSImagePickerEditorDelegate.h; sourceTree = SOURCE_ROOT; };
+		5DFAF5C2141D2B700032EE2B /* YSImageCrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSImageCrop.m; sourceTree = "<group>"; };
+		5DFAF5C3141D2B700032EE2B /* YSImageCrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSImageCrop.h; sourceTree = "<group>"; };
+		5DFAF5C4141D2B700032EE2B /* YSImagePickerEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSImagePickerEditor.m; sourceTree = "<group>"; };
+		5DFAF5C5141D2B700032EE2B /* YSImageCropDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSImageCropDelegate.h; sourceTree = "<group>"; };
+		5DFAF5C6141D2B700032EE2B /* YSImagePickerEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSImagePickerEditor.h; sourceTree = "<group>"; };
+		5DFAF5C7141D2B700032EE2B /* YSImagePickerEditorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSImagePickerEditorDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,12 +117,12 @@
 		5DFAF4F11417ACC70032EE2B /* YSImagePickerEditor */ = {
 			isa = PBXGroup;
 			children = (
-				5DFAF5221418B5E70032EE2B /* YSImageCrop.m */,
-				5DFAF5231418B5E80032EE2B /* YSImageCrop.h */,
-				5DFAF5241418B5EB0032EE2B /* YSImagePickerEditor.m */,
-				5DFAF5251418B5ED0032EE2B /* YSImageCropDelegate.h */,
-				5DFAF5261418B5EE0032EE2B /* YSImagePickerEditor.h */,
-				5DFAF5271418B5F00032EE2B /* YSImagePickerEditorDelegate.h */,
+				5DFAF5C2141D2B700032EE2B /* YSImageCrop.m */,
+				5DFAF5C3141D2B700032EE2B /* YSImageCrop.h */,
+				5DFAF5C4141D2B700032EE2B /* YSImagePickerEditor.m */,
+				5DFAF5C5141D2B700032EE2B /* YSImageCropDelegate.h */,
+				5DFAF5C6141D2B700032EE2B /* YSImagePickerEditor.h */,
+				5DFAF5C7141D2B700032EE2B /* YSImagePickerEditorDelegate.h */,
 			);
 			name = YSImagePickerEditor;
 			sourceTree = "<group>";
@@ -190,8 +190,8 @@
 				5DFAF4D914179D950032EE2B /* main.m in Sources */,
 				5DFAF4DC14179D950032EE2B /* UIImagePickerWithEditorAppDelegate.m in Sources */,
 				5DFAF4E214179D950032EE2B /* UIImagePickerWithEditorViewController.m in Sources */,
-				5DFAF5281418B5F20032EE2B /* YSImageCrop.m in Sources */,
-				5DFAF5291418B5F20032EE2B /* YSImagePickerEditor.m in Sources */,
+				5DFAF5C8141D2B700032EE2B /* YSImageCrop.m in Sources */,
+				5DFAF5C9141D2B700032EE2B /* YSImagePickerEditor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +306,7 @@
 				5DFAF4EA14179D950032EE2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
