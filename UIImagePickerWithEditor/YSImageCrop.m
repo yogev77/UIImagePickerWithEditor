@@ -112,8 +112,7 @@
 UIImage* imageFromView(UIImage* srcImage, CGRect* rect)
 {
     CGImageRef cr = CGImageCreateWithImageInRect(srcImage.CGImage, *rect);
-    UIImage* cropped = [UIImage imageWithCGImage:cr];
-    
+    UMIImage* cropped = [UIImage imageWithCGImage:cr scale:1.0f orientation:srcImage.imageOrientation];
     CGImageRelease(cr);
     return cropped;
 }
