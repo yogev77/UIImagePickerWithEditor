@@ -86,6 +86,7 @@
         //imagePicker.contentSizeForViewInPopover = popoverSize;
         self.popoverController = [[[UIPopoverController alloc]
                                    initWithContentViewController:imagePicker] autorelease];
+        self.popoverController.delegate = self;
         [self.popoverController 
          presentPopoverFromBarButtonItem:self.barButton
          permittedArrowDirections:UIPopoverArrowDirectionUp
@@ -98,11 +99,11 @@
     [self dismissPopoverAnimated:FALSE];
     YSImageCrop * imageCrop = [[[YSImageCrop alloc] initWithImage:image andSize:CGSizeMake(popoverSize.width, popoverSize.height)] autorelease];
     imageCrop.delegate =self;
-    UINavigationController *navigationController = [[[UINavigationController alloc] initWithRootViewController:imageCrop] autorelease];     
-    self.popoverController.delegate = self;
+    UINavigationController *navigationController = [[[UINavigationController alloc] initWithRootViewController:imageCrop] autorelease];
     
     self.popoverController = [[[UIPopoverController alloc]
                                initWithContentViewController:navigationController] autorelease];
+    self.popoverController.delegate = self;
     
     [self.popoverController 
      presentPopoverFromBarButtonItem:self.barButton
